@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Douglas Palmer — Production / Plant Manager, Nashville</title>
+<meta name="description" content="Douglas Palmer — hands-on production and plant manager who built a Nashville print and mail operation from the ground up.">
+<style>
+  :root{
+    --ink:#1a1d21;--muted:#5b6470;--faint:#8a929c;
+    --accent:#1f6f5c;--line:#e4e7eb;--bg:#ffffff;--bg-alt:#f6faf8;--max:880px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--max);margin:0 auto}
+
+  .switch{background:#10302a;color:#cfe6df;font-size:.85rem;padding:10px 24px}
+  .switch .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px}
+  .switch .lbl{text-transform:uppercase;letter-spacing:1.5px;font-size:.72rem;color:#7fb8a8;font-weight:700}
+  .switch a{color:#cfe6df;padding:3px 10px;border-radius:20px}
+  .switch a:hover{text-decoration:none;background:rgba(255,255,255,.12)}
+  .switch a.active{background:var(--accent);color:#fff;font-weight:600}
+
+  header{background:linear-gradient(135deg,#16443a 0%,#1f6f5c 100%);color:#fff;padding:64px 24px 56px}
+  header .role-tag{display:inline-block;background:rgba(255,255,255,.15);color:#eaf5f1;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;padding:5px 13px;border-radius:20px;margin-bottom:18px}
+  header h1{font-size:clamp(2.2rem,6vw,3.2rem);font-weight:700;letter-spacing:-0.5px;line-height:1.1}
+  header .tagline{font-size:clamp(1rem,2.6vw,1.25rem);margin-top:12px;color:#cfe6df;max-width:660px}
+  .contact{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.95rem}
+  .contact a,.contact span{color:#eaf5f1;display:inline-flex;align-items:center;gap:7px}
+  .contact a:hover{color:#fff}.dot{opacity:.45}
+
+  section{padding:54px 24px}
+  section:nth-of-type(even){background:var(--bg-alt)}
+  .eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:700;color:var(--accent);margin-bottom:18px}
+  .summary-text{font-size:1.15rem;color:#33383f;max-width:760px}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin-top:36px}
+  .stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:22px 20px}
+  section:nth-of-type(even) .stat{background:#fff}
+  .stat .num{font-size:1.6rem;font-weight:700;color:var(--accent);line-height:1.1}
+  .stat .label{font-size:.9rem;color:var(--muted);margin-top:6px}
+
+  .job{border-left:3px solid var(--line);padding:0 0 38px 26px;position:relative}
+  .job:last-child{padding-bottom:0}
+  .job::before{content:"";position:absolute;left:-8px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+  section:nth-of-type(even) .job::before{border-color:var(--bg-alt)}
+  .job .role{font-size:1.2rem;font-weight:700}
+  .job .meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin-top:2px}
+  .job .company{color:var(--accent);font-weight:600;font-size:.98rem}
+  .job .dates{color:var(--faint);font-size:.9rem;font-style:italic;white-space:nowrap}
+  .job .blurb{color:var(--muted);font-size:.96rem;margin:12px 0 4px;max-width:720px}
+  .job ul{list-style:none;margin-top:12px}
+  .job li{position:relative;padding-left:22px;margin-bottom:9px;font-size:.97rem;color:#3a4047}
+  .job li::before{content:"";position:absolute;left:3px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.65}
+
+  .edu{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:22px 24px;max-width:600px}
+  section:nth-of-type(even) .edu{background:#fff}
+  .edu .degree{font-weight:700;font-size:1.05rem}.edu .school{color:var(--muted);font-size:.95rem}.edu .yr{color:var(--faint);font-style:italic;font-size:.9rem}
+
+  footer{background:#10302a;color:#cfe6df;text-align:center;padding:40px 24px;font-size:.9rem}
+  footer a{color:#fff}footer .name{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:6px}
+  @media (max-width:560px){header{padding:48px 20px 42px}section{padding:42px 20px}.job .dates{white-space:normal}}
+</style>
+</head>
+<body>
+
+<nav class="switch"><div class="wrap">
+  <span class="lbl">Tailored for</span>
+  <a href="sales.html">National Sales Rep</a>
+  <a href="production.html" class="active">Production Manager</a>
+  <a href="procurement.html">Procurement Director</a>
+  <a href="consultant.html">Nonprofit Consultant</a>
+  <a href="agency.html">Agency Partner</a>
+</div></nav>
+
+<header><div class="wrap">
+  <span class="role-tag">Production / Plant Manager — Nashville</span>
+  <h1>Douglas Palmer</h1>
+  <p class="tagline">Hands-on production leader who built a Nashville print &amp; mail operation from zero to a two-shift, 15-person plant — and a Nashville-area resident ready to run the floor on day one.</p>
+  <div class="contact">
+    <a href="tel:+16164051639">616-405-1639</a><span class="dot">•</span>
+    <a href="mailto:dougp1@me.com">dougp1@me.com</a><span class="dot">•</span>
+    <span>Nolensville, Tennessee</span>
+  </div>
+</div></header>
+
+<section id="summary"><div class="wrap">
+  <p class="eyebrow">Summary</p>
+  <p class="summary-text">Operations-focused production leader with deep, hands-on expertise across print, inserting, and direct mail. Proven at building plants and teams from the ground up, optimizing throughput, and developing future leaders. Known for operational excellence, reliable quality, and keeping equipment running — delivering results through trust, collaboration, and a willingness to be on the floor solving problems.</p>
+  <div class="stats">
+    <div class="stat"><div class="num">0 → 15</div><div class="label">Built Nashville team from zero to two shifts</div></div>
+    <div class="stat"><div class="num">17,000 sq ft</div><div class="label">Facility expansion led</div></div>
+    <div class="stat"><div class="num">100%</div><div class="label">On-time mail delivery, incl. COVID era</div></div>
+    <div class="stat"><div class="num">Local</div><div class="label">Nolensville, TN — Nashville market</div></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <p class="eyebrow">Experience</p>
+
+  <div class="job">
+    <div class="role">Plant Manager, Nashville</div>
+    <div class="meta"><span class="company">SFX America — Portland, ME / Nashville, TN</span><span class="dates">November 2022 – May 2026</span></div>
+    <p class="blurb">Production division of MPX, a $35M integrated print, direct mail, and communications company serving healthcare, insurance, financial services, government, and other regulated industries.</p>
+    <ul>
+      <li>Relocated to Nashville to establish and lead a new production facility — partnering with executive leadership on site selection, facility design, equipment acquisition, workflow development, and operational strategy.</li>
+      <li>Built the operation from the ground up: recruited, hired, trained, and developed a team that grew from zero to a two-shift, 15-person operation with continued expansion plans.</li>
+      <li>Directed all day-to-day operations — production planning, work-in-process management, staffing, quality control, scheduling, maintenance coordination, and client service performance.</li>
+      <li>Led a 17,000-square-foot facility expansion to support rising production volume, added equipment capacity, and future growth.</li>
+      <li>Served as the primary operational leader for all print, inserting, and mail production — providing hands-on troubleshooting and technical support for digital printing and inserting equipment to minimize downtime and maximize throughput.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="role">Senior Production Manager</div>
+    <div class="meta"><span class="company">HH Global — Chicago, IL / Memphis, TN</span><span class="dates">July 2018 – November 2022</span></div>
+    <p class="blurb">In-house print, mail, and procurement subject matter expert for Frontdoor and American Home Shield, overseeing production of 50M+ direct mail pieces annually.</p>
+    <ul>
+      <li>Oversaw production, data management, and execution of more than 50 million direct mail pieces annually.</li>
+      <li>Transitioned from traditional web to digital continuous-feed workflow, achieving a 12% cost reduction and strengthening VDP for acquisition mail.</li>
+      <li>Maintained 100% on-time mail delivery performance through COVID-era supply chain disruptions.</li>
+      <li>Launched USPS Informed Delivery across all campaigns, generating $70K+ in postage savings.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="role">Direct Mail and Fulfillment Manager</div>
+    <div class="meta"><span class="company">Holland Litho Printing Service — Zeeland, MI</span><span class="dates">July 2005 – July 2018</span></div>
+    <p class="blurb">Full-service commercial print and direct mail company serving corporate and nonprofit clients.</p>
+    <ul>
+      <li>Designed, implemented, and managed a full-service direct mail division — overseeing mail production, data processing, postal compliance, equipment selection, workflow development, and logistics.</li>
+      <li>Led installation and integration of the company's first digital printing and variable data imaging technologies.</li>
+      <li>Introduced high-speed intelligent inserting systems that increased capacity, improved accuracy, and enhanced efficiency.</li>
+      <li>Managed vendor relationships, postal logistics, production scheduling, quality control, and continuous process improvement.</li>
+      <li>Helped grow annual revenue from $6 million to $13 million through operational innovation and expanded services.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="role">Sales / Estimator / Job Planner</div>
+    <div class="meta"><span class="company">Custom Color Graphics — Champaign, IL</span><span class="dates">September 2002 – July 2005</span></div>
+    <p class="blurb">Midsize commercial sheet-fed printer with prepress, bindery, and direct mail services.</p>
+    <ul>
+      <li>Managed estimating, job planning, and production coordination for commercial print and direct mail, supporting revenue growth from $3 million to $6 million.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="role">Account Coordinator &amp; Account Executive</div>
+    <div class="meta"><span class="company">Bloomington Offset Process (BOPI) — Bloomington, IL</span><span class="dates">1995 – 2002</span></div>
+    <p class="blurb">Commercial printer serving corporate, nonprofit, and educational clients.</p>
+    <ul>
+      <li>Directed a team overseeing print production and fulfillment for Mitsubishi Motors Manufacturing, earning Top 10 Supplier recognition three consecutive years.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <p class="eyebrow">Education</p>
+  <div class="edu">
+    <div><div class="degree">B.A. in Communications</div><div class="school">Millikin University — Decatur, Illinois</div></div>
+    <div class="yr">May 1991</div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="name">Douglas Palmer</div>
+  <div><a href="tel:+16164051639">616-405-1639</a> &nbsp;•&nbsp; <a href="mailto:dougp1@me.com">dougp1@me.com</a> &nbsp;•&nbsp; Nolensville, Tennessee</div>
+</div></footer>
+
+</body>
+</html>

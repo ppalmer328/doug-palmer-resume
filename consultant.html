@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Douglas Palmer — Fractional Consultant for Nonprofit Direct Mail &amp; Fundraising</title>
+<meta name="description" content="Douglas Palmer — fractional/consulting partner helping nonprofits run smarter, lower-cost direct mail and donor fundraising campaigns.">
+<style>
+  :root{
+    --ink:#1a1d21;--muted:#5b6470;--faint:#8a929c;
+    --accent:#b5631f;--line:#e8e2da;--bg:#ffffff;--bg-alt:#fbf7f1;--max:880px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--max);margin:0 auto}
+
+  .switch{background:#3a2410;color:#f0e2d2;font-size:.85rem;padding:10px 24px}
+  .switch .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px}
+  .switch .lbl{text-transform:uppercase;letter-spacing:1.5px;font-size:.72rem;color:#c79a6f;font-weight:700}
+  .switch a{color:#f0e2d2;padding:3px 10px;border-radius:20px}
+  .switch a:hover{text-decoration:none;background:rgba(255,255,255,.12)}
+  .switch a.active{background:var(--accent);color:#fff;font-weight:600}
+
+  header{background:linear-gradient(135deg,#7c3d12 0%,#b5631f 100%);color:#fff;padding:66px 24px 58px}
+  header .role-tag{display:inline-block;background:rgba(255,255,255,.16);color:#fbeee2;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;padding:5px 13px;border-radius:20px;margin-bottom:18px}
+  header h1{font-size:clamp(2.1rem,5.8vw,3.1rem);font-weight:700;letter-spacing:-0.5px;line-height:1.12}
+  header .tagline{font-size:clamp(1.05rem,2.6vw,1.3rem);margin-top:14px;color:#f6e6d6;max-width:680px}
+  .cta-row{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:12px 22px;border-radius:26px;font-weight:600;font-size:.98rem}
+  .btn-primary{background:#fff;color:#8a4516}.btn-primary:hover{text-decoration:none;background:#fdeede}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff}.btn-ghost:hover{text-decoration:none;background:rgba(255,255,255,.12)}
+
+  section{padding:54px 24px}
+  section:nth-of-type(even){background:var(--bg-alt)}
+  .eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:700;color:var(--accent);margin-bottom:18px}
+  .lead{font-size:1.18rem;color:#33383f;max-width:760px}
+  .lead strong{color:var(--ink)}
+  .lead + .lead{margin-top:16px}
+
+  /* services */
+  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:8px}
+  .card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:24px 22px}
+  section:nth-of-type(even) .card{background:#fff}
+  .card h3{font-size:1.08rem;color:var(--accent)}
+  .card p{font-size:.96rem;color:var(--muted);margin-top:8px}
+
+  /* proof stats */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin-top:8px}
+  .stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:22px 20px}
+  section:nth-of-type(even) .stat{background:#fff}
+  .stat .num{font-size:1.55rem;font-weight:700;color:var(--accent);line-height:1.1}
+  .stat .label{font-size:.9rem;color:var(--muted);margin-top:6px}
+
+  /* engagement models */
+  .models{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:8px}
+  .model{border:1px solid var(--line);border-radius:14px;padding:24px 22px;background:var(--bg)}
+  section:nth-of-type(even) .model{background:#fff}
+  .model .mt{font-weight:700;font-size:1.05rem}
+  .model .md{color:var(--muted);font-size:.95rem;margin-top:8px}
+
+  /* experience condensed */
+  .exp{border-left:3px solid var(--line);padding:0 0 26px 24px;position:relative}
+  .exp:last-child{padding-bottom:0}
+  .exp::before{content:"";position:absolute;left:-8px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+  section:nth-of-type(even) .exp::before{border-color:var(--bg-alt)}
+  .exp .role{font-weight:700;font-size:1.08rem}
+  .exp .meta{color:var(--faint);font-size:.9rem;font-style:italic;margin-top:1px}
+  .exp p{font-size:.96rem;color:#3a4047;margin-top:8px;max-width:720px}
+
+  /* contact CTA */
+  .contact-band{background:linear-gradient(135deg,#7c3d12,#b5631f);color:#fff;text-align:center}
+  .contact-band h2{font-size:1.7rem;font-weight:700}
+  .contact-band p{color:#f6e6d6;margin-top:10px;font-size:1.05rem}
+  .contact-band .cta-row{justify-content:center;margin-top:24px}
+
+  footer{background:#3a2410;color:#f0e2d2;text-align:center;padding:36px 24px;font-size:.9rem}
+  footer a{color:#fff}footer .name{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:6px}
+  @media (max-width:560px){header{padding:50px 20px 44px}section{padding:42px 20px}}
+</style>
+</head>
+<body>
+
+<nav class="switch"><div class="wrap">
+  <span class="lbl">Tailored for</span>
+  <a href="sales.html">National Sales Rep</a>
+  <a href="production.html">Production Manager</a>
+  <a href="procurement.html">Procurement Director</a>
+  <a href="consultant.html" class="active">Nonprofit Consultant</a>
+  <a href="agency.html">Agency Partner</a>
+</div></nav>
+
+<header><div class="wrap">
+  <span class="role-tag">Fractional Consultant — Nonprofit Direct Mail &amp; Fundraising</span>
+  <h1>Raise more. Spend less.<br>Mail smarter.</h1>
+  <p class="tagline">I'm Doug Palmer. For 30 years I've run the print, mail, and data operations behind high-volume direct mail — now I help nonprofits turn that expertise into stronger donor campaigns and real savings, without adding a full-time hire.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="mailto:dougp1@me.com?subject=Fractional%20consulting%20inquiry">Start a conversation</a>
+    <a class="btn btn-ghost" href="tel:+16164051639">616-405-1639</a>
+  </div>
+</div></header>
+
+<section id="why"><div class="wrap">
+  <p class="eyebrow">The opportunity</p>
+  <p class="lead">For most nonprofits, <strong>direct mail is the largest line item in the fundraising budget</strong> — and the one with the least in-house expertise behind it. Postage, print, data, and lettershop decisions quietly drain dollars that could go to the mission.</p>
+  <p class="lead">I've spent a career on the production and procurement side of that equation: negotiating supplier pricing, optimizing postal spend, and building data-driven campaigns that actually move donors. As a <strong>fractional or project consultant</strong>, I bring that senior-level know-how to your team for a fraction of the cost of a full-time hire.</p>
+</div></section>
+
+<section id="help"><div class="wrap">
+  <p class="eyebrow">How I can help</p>
+  <div class="svc">
+    <div class="card"><h3>Donor Data &amp; Segmentation</h3><p>Audience segmentation and data-driven targeting models that put the right ask in front of the right donor — improving response and lifetime value.</p></div>
+    <div class="card"><h3>Postal &amp; Print Cost Reduction</h3><p>Postal optimization, format and workflow choices, and supplier negotiation that cut cost per piece — savings that flow straight back to programs.</p></div>
+    <div class="card"><h3>Campaign Strategy &amp; Execution</h3><p>End-to-end appeal planning: personalization and variable data, production workflow, and on-time, on-budget delivery.</p></div>
+    <div class="card"><h3>Vendor &amp; RFP Support</h3><p>Build competitive RFPs, vet print/mail vendors, and negotiate pricing, SLAs, and performance — so you know you're getting fair value.</p></div>
+    <div class="card"><h3>Informed Delivery &amp; Channel Lift</h3><p>Stand up USPS Informed Delivery and multi-touch tactics that add free brand impressions and reinforce the ask.</p></div>
+    <div class="card"><h3>Team Mentoring</h3><p>Coach in-house marketing and development staff so the expertise stays with you after the engagement ends.</p></div>
+  </div>
+</div></section>
+
+<section id="proof"><div class="wrap">
+  <p class="eyebrow">Proof it works</p>
+  <p class="lead" style="margin-bottom:30px">Results from a career running production and procurement for organizations mailing at scale:</p>
+  <div class="stats">
+    <div class="stat"><div class="num">12%</div><div class="label">Cost reduction via smarter print/mail workflow</div></div>
+    <div class="stat"><div class="num">$70K+</div><div class="label">Postage savings captured on a single program</div></div>
+    <div class="stat"><div class="num">50M+</div><div class="label">Direct mail pieces produced annually</div></div>
+    <div class="stat"><div class="num">100%</div><div class="label">On-time delivery, even through COVID disruption</div></div>
+  </div>
+</div></section>
+
+<section id="models"><div class="wrap">
+  <p class="eyebrow">Ways to work together</p>
+  <div class="models">
+    <div class="model"><div class="mt">Fractional Director</div><div class="md">Ongoing part-time leadership for your direct mail &amp; production function — senior expertise on a monthly retainer.</div></div>
+    <div class="model"><div class="mt">Project Engagement</div><div class="md">A defined scope: a vendor RFP, a postal-savings audit, or a campaign build, delivered start to finish.</div></div>
+    <div class="model"><div class="mt">Advisory &amp; Coaching</div><div class="md">On-call guidance and mentoring for your existing team, by the hour or in a light monthly block.</div></div>
+  </div>
+</div></section>
+
+<section id="background"><div class="wrap">
+  <p class="eyebrow">Background</p>
+
+  <div class="exp">
+    <div class="role">Direct Mail &amp; Fulfillment Manager — Holland Litho</div>
+    <div class="meta">2005 – 2018 · Zeeland, MI</div>
+    <p>Built and ran a full-service direct mail division and partnered directly with <strong>nonprofit organizations on data-driven fundraising strategies, audience segmentation, and targeted campaigns</strong> that improved donor engagement and performance. Helped grow company revenue from $6M to $13M.</p>
+  </div>
+
+  <div class="exp">
+    <div class="role">Senior Production Manager — HH Global</div>
+    <div class="meta">2018 – 2022 · Memphis, TN</div>
+    <p>In-house print, mail, and procurement expert overseeing 50M+ pieces annually. Negotiated supplier RFPs and pricing, cut costs 12% via workflow change, and captured $70K+ in postage savings through USPS Informed Delivery.</p>
+  </div>
+
+  <div class="exp">
+    <div class="role">Plant Manager — SFX America (Nashville)</div>
+    <div class="meta">2022 – 2026 · Nashville, TN</div>
+    <p>Built a new production facility from zero to a two-shift, 15-person operation — hands-on across print, inserting, and mail, with full P&amp;L-adjacent operational ownership.</p>
+  </div>
+
+  <div class="exp">
+    <div class="role">B.A. in Communications — Millikin University</div>
+    <div class="meta">1991 · Decatur, IL</div>
+  </div>
+</div></section>
+
+<section class="contact-band"><div class="wrap">
+  <h2>Let's talk about your next appeal.</h2>
+  <p>A short call to find where the savings and the lift are hiding — no obligation.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="mailto:dougp1@me.com?subject=Fractional%20consulting%20inquiry">Email dougp1@me.com</a>
+    <a class="btn btn-ghost" href="tel:+16164051639">Call 616-405-1639</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="name">Douglas Palmer</div>
+  <div><a href="tel:+16164051639">616-405-1639</a> &nbsp;•&nbsp; <a href="mailto:dougp1@me.com">dougp1@me.com</a> &nbsp;•&nbsp; Nolensville, Tennessee</div>
+</div></footer>
+
+</body>
+</html>
